@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    border: 2px solid #5a76de;
+    padding: 10px 20px 30px 40px;
+    padding: 10px 20px;
+    /* padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-right: 25px; */
+
+    margin: 12px;
+    outline: 12px solid red;
+}
+
+#para {
+    border: 2px solid blue;
+    margin: 10px;
+}

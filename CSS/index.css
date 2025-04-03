@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    background-color: burlywood;
+    color: rgb(139, 41, 164);
+}
+
+#para1 {
+    background-color: lightblue;
+    color: #ff0000;
+}
+
+.para2 {
+    background-color: lightgreen;
+    color: rgb(0, 12, 150);
+}

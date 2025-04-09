@@ -6,6 +6,7 @@
     padding: 12px;
     background-color: antiquewhite;
     margin: 10px;
+    /* display: inline-block; */
 }
 
 .cards {
@@ -28,7 +29,10 @@ h6 {
 h2 {
     font-size: 18px;
     text-transform: capitalize;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-variant: small-caps;
 }
 
 p {
@@ -44,3 +48,4 @@ a {
     color: black;
     text-decoration: none;
 }
+

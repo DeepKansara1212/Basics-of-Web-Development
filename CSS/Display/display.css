@@ -1,0 +1,12 @@
+.parent-box {
+    border: 2px solid red;
+    background-color: bisque;
+}
+
+.parent-box p span {
+    background-color: lightblue;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+}

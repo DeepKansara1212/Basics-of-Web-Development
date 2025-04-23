@@ -1,0 +1,24 @@
+.img {
+    /* height: 500px; */
+    width: 800px;
+    height: auto;
+    border: 2px solid red;
+    position: relative;
+}
+
+.img img {
+    width: 800px;
+    opacity: 0.4;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

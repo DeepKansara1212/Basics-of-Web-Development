@@ -1,0 +1,23 @@
+.parent {
+    border: 2px solid green;
+    width: 700px;
+    height: 700px;
+    position: relative;
+}
+
+.box {
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
+    /* position: relative; */
+}
+
+.child {
+    border: 2px solid blue;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,28 @@
+.boxes {
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.box1 {
+    height: 400px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+}
+.box2 {
+    height: 100px;
+    width: 400px;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+}
+.box3 {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+}

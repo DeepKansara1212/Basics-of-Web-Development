@@ -1,0 +1,36 @@
+div > p {
+    background-color: blue;
+}
+
+/* div section p {
+    background-color: red;
+} */
+
+div + p {
+    background-color: green;
+    padding: 10px;
+}
+div ~ p {
+    background-color: yellow;
+    padding: 10px;
+}
+
+div .section p:hover {
+    background-color: orange;
+}
+
+div .section {
+    cursor: pointer;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: purple;
+}
+
+div:nth-child(odd) {
+    color: burlywood;
+}

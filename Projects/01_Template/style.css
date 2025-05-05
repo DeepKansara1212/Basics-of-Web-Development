@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+    width: 100%;
+    height: 65%;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1587280501635-a19de238a81e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#text {
+    width: 100%;
+    /* height: 120px; */
+    /* background-color: red; */
+    color: white;
+    font-size: 2.3vw;
+    position: absolute;
+    bottom: 60px;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+}
+
+#text h1 {
+    width: 40%;
+}
+
+#text-right {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text-right p {
+    font-size: 1vw;
+}
+
+#text-right #icons {
+    font-size: 1vw;
+}
+
+#bottom {
+    width: 100%;
+    height: 35%;
+    background-color: blue;
+    display: flex;
+}
+
+#bottom-one {
+    width: 20%;
+    height: 100%;
+    background-color: green;
+}
+#bottom-two {
+    width: 30%;
+    height: 100%;
+    background-color: yellow;
+    background-image: url(https://plus.unsplash.com/premium_photo-1674769116099-d70d710ebb30?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#bottom-three {
+    width: 20%;
+    height: 100%;
+    background-color: pink;
+}
+#bottom-four {
+    width: 30%;
+    height: 100%;
+    background-color: orange;
+}   
+
+#bottom-three-one {
+    height: 50%;
+    width: 100%;
+    background-color: chocolate;    
+}
+#bottom-three-two {
+    height: 50%;
+    width: 100%;
+    background-color: gray;
+    background-image: url(https://images.unsplash.com/photo-1473225071450-1f1462d5aa92?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}

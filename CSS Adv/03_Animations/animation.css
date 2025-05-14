@@ -1,0 +1,39 @@
+#box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    animation-name: moveBox;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes moveBox {
+    0% {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background-color: yellow;
+        top: 0;
+        left: 100px
+    }
+    50% {
+        background-color: green;
+        top: 100px;
+        left: 100px;
+    }
+    75% {
+        background-color: blue;
+        top: 100px;
+        left: 0;
+    }
+    100% {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+}

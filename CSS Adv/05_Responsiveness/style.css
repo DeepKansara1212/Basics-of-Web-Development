@@ -1,0 +1,25 @@
+body {
+    background-color: coral;
+}
+
+h1 {
+    color: #5342a1;
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+p {
+    color: whitesmoke;
+    /* font-size: 3vw; */
+    font-weight: 400;
+}
+
+@media screen and (max-width: 560px){
+    body {
+        background-color: cornflowerblue;
+    }
+
+    h1 {
+        color: crimson;
+    }
+}

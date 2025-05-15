@@ -1,0 +1,8 @@
+#copy-img {
+    width: 200px;
+    height: 300px;
+    margin-left: 50px;
+    object-fit: cover;
+    object-position: 0 20%;
+    border: 2px solid red;
+}

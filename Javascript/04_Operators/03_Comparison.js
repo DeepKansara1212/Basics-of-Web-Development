@@ -10,7 +10,6 @@ console.log(a < b);
 console.log(a <= b);
 console.log(a >= b);
 
-
 // '==' operator only checks for value equality
 console.log(a == c);
 console.log(a != c);

@@ -1,6 +1,10 @@
 // fruits = "mango"; 
 // fruits = "banana";
 
+// fruits = "orange";
+// console.log("fruits");
+// console.log(fruits);
+
 number = 5
 age = 20
 
@@ -15,11 +19,11 @@ let fruits = "apple";
 // fruits = "apple";
 
 
-console.log(cars);
+// console.log(cars);
 var cars = "BMW";
 // var cars = "Mercedes"; // redeclaration is allowed
 
 const pi = 3.14;
-console.log("hello world");
+// console.log("hello world");
 
-console.log(pi);
+// console.log(pi);

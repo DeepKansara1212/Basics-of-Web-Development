@@ -10,4 +10,4 @@ heading.innerText = "Hello World !!!"
 para1.textContent = "Some Paragraph"
 para2.innerHTML = '<h1>Hello</h1>'
 
-console.log(para1.textContent); 
+console.log(para1.textContent);  

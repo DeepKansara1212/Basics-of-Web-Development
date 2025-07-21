@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    
+</body>
+
+<script>
+
+    // Creation of an Element
+    function createElement(langName, id) {
+        const li = document.createElement('li')
+        li.className = 'list-items'
+        li.id = `${id}`
+        const myContent = document.createTextNode(`${langName}`)
+        li.appendChild(myContent)
+        document.body.appendChild(li)
+        // console.log(li);
+    }
+
+    createElement('Javascript', 'js')
+    createElement('Python', 'py')
+    createElement('Java', 'java')
+    createElement('C', 'c')
+    createElement('C++', 'cpp')
+
+
+    // Updation of an Element
+    const newLi = document.querySelectorAll('.list-items')
+    // console.log(newLi[2].innerHTML);
+
+    const updatedLi = document.createElement('li')
+    const content = document.createTextNode('Ruby')
+
+
+    newLi[2].replaceWith(content) 
+
+
+
+</script>
+
+</html>

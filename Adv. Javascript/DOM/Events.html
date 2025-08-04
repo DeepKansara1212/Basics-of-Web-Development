@@ -17,10 +17,14 @@
         return Math.floor(Math.random() * (number + 1))
     }
 
-    button.addEventListener('dblclick', () => {
+    const randomColor = () => {
         const color = `rgb(${random(255)} ${random(255)} ${random(255)})`
         // console.log(color);
         document.body.style.backgroundColor = color
-    });
+    }
+
+    button.addEventListener('click', randomColor);
+
+    // button.removeEventListener()
 
 </script>

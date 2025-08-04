@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      #todoForm {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      #newTask {
+        flex-grow: 1;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+
+      #addBtn {
+        padding: 0.6rem 1.2rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        background: white;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .task-text.completed {
+        text-decoration: line-through;
+        color: #888;
+      }
+
+      .actions button {
+        margin-left: 0.5rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .actions button:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📝 To-Do List</h1>
+
+    <form id="todoForm">
+      <input type="text" id="newTask" placeholder="Enter a new task..." />
+      <button type="submit" id="addBtn">Add</button>
+    </form>
+
+    <ul id="taskList">
+      <!-- Dynamic tasks will be injected here -->
+    </ul>
+  </body>
+</html>
+
+<script>
+  const btn = document.querySelector("#addBtn");
+  const list = document.querySelector("#taskList");
+  const form = document.querySelector("#todoForm");
+  const task = document.querySelector("#newTask");
+
+  // console.log(list_item);
+
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        // console.log(e);
+
+        const task_value = task.value;
+        // console.log(task_value);
+
+        if(task_value !== '') {
+            createElement(task_value);
+            task.value = '';
+        }
+    }); 
+
+  
+  // Create an Element
+  function createElement(textContent) {
+    const list_item = document.createElement("li");
+    // const text = document.createTextNode(textContent);
+    // list_item.appendChild(text);
+
+    list_item.innerHTML = `<p>${textContent}</p>`
+
+    list.appendChild(list_item);
+  }
+
+</script>

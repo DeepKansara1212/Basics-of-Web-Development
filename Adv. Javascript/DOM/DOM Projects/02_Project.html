@@ -93,30 +93,27 @@
 
   // console.log(list_item);
 
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // console.log(e);
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault()
-        // console.log(e);
+    const task_value = task.value;
+    // console.log(task_value);
 
-        const task_value = task.value;
-        // console.log(task_value);
+    if (task_value !== "") {
+      createElement(task_value);
+      task.value = "";
+    }
+  });
 
-        if(task_value !== '') {
-            createElement(task_value);
-            task.value = '';
-        }
-    }); 
-
-  
   // Create an Element
   function createElement(textContent) {
     const list_item = document.createElement("li");
     // const text = document.createTextNode(textContent);
     // list_item.appendChild(text);
 
-    list_item.innerHTML = `<p>${textContent}</p>`
+    list_item.innerHTML = `<p>${textContent}</p>`;
 
     list.appendChild(list_item);
   }
-
 </script>

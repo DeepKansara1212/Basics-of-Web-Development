@@ -75,23 +75,22 @@
 </html>
 
 <script>
+  const dec = document.querySelector(".decrement");
+  const inc = document.querySelector(".increment");
+  const count = document.querySelector("#count");
 
-    const dec = document.querySelector(".decrement")
-    const inc = document.querySelector(".increment")
-    const count = document.querySelector("#count")
+  number = count.innerHTML;
+  // console.log(number);
 
-    number = count.innerHTML
+  inc.addEventListener('click', () => {
+      number++
+      console.log(`Increment: ${number}`);
+      count.textContent = number;
+  });
 
-    inc.addEventListener('click', () => {
-        number++
-        console.log(`Increment: ${number}`);
-        count.textContent = number;
-    });
-
-    dec.addEventListener('click', () => {
-        number--
-        console.log(`Decrement: ${number}`);
-        count.textContent = number;
-    });
-    
+  dec.addEventListener('click', () => {
+      number--
+      console.log(`Decrement: ${number}`);
+      count.textContent = number;
+  });
 </script>

@@ -50,7 +50,7 @@
 
       <img
         id="displayImage"
-        src="https://via.placeholder.com/600x300?text=Laptop"
+        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Selected Item"
       />
     </div>
@@ -58,5 +58,26 @@
 </html>
 
 <script>
-    // JS Code Here
+  // JS Code Here
+
+  const imgSelector = document.querySelector("#imageSelector")
+  const displayImage = document.querySelector("#displayImage")
+
+  // console.log(displayImage.src);
+  
+
+  const Products = {
+    laptop: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    smartphone: "https://images.unsplash.com/photo-1598965402089-897ce52e8355?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    headphones: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+
+  imgSelector.addEventListener('change', function() {
+    let content = this.value
+    // console.log(Products[content]);
+    // console.log(displayImage.src);
+    
+    displayImage.src = Products[content] 
+  });
+
 </script>

@@ -47,5 +47,24 @@
 </html>
 
 <script>
-    // Javascript Code here
+  // Javascript Code here
+
+  function updateDateTime() {
+    const date = new Date();
+    // console.log(date);
+
+    let currentDate = date.toLocaleDateString();
+    let currentTime = date.toLocaleTimeString();
+
+    // console.log(currentDate, currentTime);
+
+    const dateTime = document.querySelector("#datetime");
+
+    dateTime.innerHTML = `${currentDate} | ${currentTime}`;
+  }
+
+  updateDateTime()
+
+  setInterval(updateDateTime, 1000);
+
 </script>

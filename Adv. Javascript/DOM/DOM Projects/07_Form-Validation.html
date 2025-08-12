@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation Form</title>
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 30px 25px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        max-width: 350px;
+        animation: fadeIn 0.6s ease-in-out;
+      }
+
+      .form-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2c3e50;
+        font-weight: 600;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 10px;
+        border: 1px solid #d1d9e6;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        outline: none;
+        background-color: #f8faff;
+      }
+
+      input:focus {
+        border-color: #4a90e2;
+        background-color: #ffffff;
+        box-shadow: 0 0 6px rgba(74, 144, 226, 0.2);
+      }
+
+      input.error {
+        border-color: #e74c3c;
+        background-color: #fff6f6;
+      }
+
+      .error-message {
+        color: #e74c3c;
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: none;
+        background: #ffe5e5;
+        padding: 6px 10px;
+        border-radius: 6px;
+        animation: shake 0.3s ease;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, #4a90e2, #357abd);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background: linear-gradient(135deg, #357abd, #2c5aa0);
+        box-shadow: 0 4px 12px rgba(53, 122, 189, 0.3);
+        transform: translateY(-1px);
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20%,
+        60% {
+          transform: translateX(-4px);
+        }
+        40%,
+        80% {
+          transform: translateX(4px);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 400px) {
+        .form-container {
+          padding: 20px 15px;
+        }
+        button {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Subscribe</h2>
+      <form id="emailForm">
+        <input type="text" id="email" placeholder="Enter your email" />
+        <div class="error-message" id="emailError">
+          Please enter a valid email address.
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  let emailForm = document.querySelector("#emailForm");
+  let emailInput = document.querySelector("#email");
+  let emailError = document.querySelector("#emailError");
+
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  emailForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(emailInput.value);
+    console.log(emailInput.value.trim());
+
+    const check = emailPattern.test(emailInput.value.trim());
+
+    if (!check) {
+      emailError.style.display = "block";
+      console.log("Enter a valid email");
+    } else {
+      console.log("Email submitted succesfully");
+    }
+  });
+</script>

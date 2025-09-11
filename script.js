@@ -3,7 +3,7 @@
 // let sum = num1 + num2
 // console.log(sum);
 
-// let num3 = 41
+// let num3 = 41  10sec
 // let num4 = 68
 // let sum1 = num3 + num4
 // console.log(sum1);

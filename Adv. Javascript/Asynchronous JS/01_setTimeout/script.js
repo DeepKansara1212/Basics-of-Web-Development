@@ -12,3 +12,11 @@ const details = setTimeout((name, age) => {
 }, 3000, "Deep", 23);
 
 clearTimeout(details);
+
+
+const timeout = setTimeout(() => {
+    console.log("Data Received");
+}, 5000);
+
+
+clearTimeout(timeout)

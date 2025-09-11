@@ -4,3 +4,12 @@ const info = setInterval(() => {
 
 
 clearInterval(info); 
+
+
+const interval = setInterval((i) => {
+    console.log("Hello", i);
+    i++;
+    
+}, 5000);
+
+clearInterval(interval)

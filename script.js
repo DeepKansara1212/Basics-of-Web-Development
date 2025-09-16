@@ -1,25 +1,17 @@
-// let num1 = 12
-// let num2 = 23 
-// let sum = num1 + num2
-// console.log(sum);
+const jokeContainer = document.getElementById("joke")
+const btn = document.getElementById("btn")
+const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
 
-// let num3 = 41  10sec
-// let num4 = 68
-// let sum1 = num3 + num4
-// console.log(sum1);
+let getJoke = () => {
+    jokeContainer.classList.remove("fade") 
+    fetch(url)
+    .then(data => data.json())
+    .then(item => {
+        jokeContainer.innerHTML = `${item.joke}`
+        jokeContainer.classList.add("fade") 
+    })
+} 
 
+btn.addEventListener("click", getJoke) 
 
-function sum(num1, num2) {
-    sum = num1 + num2;
-    return sum;
-}
-
-let result = sum(10, 34)
-console.log(result);
-
-
-sum(10, 34)
-sum(10, 34)
-sum(10, 34)
-sum(10, 34)
-sum(10, 34)
+getJoke() 

@@ -1,0 +1,5 @@
+Dictionary App -> https://api.dictionaryapi.dev/api/v2/entries/en/
+
+Country Guide App -> https://restcountries.com/v3.1/name/${countryName}?fullText=true
+
+Pookemon App -> https://pokeapi.co/api/v2/pokemon/

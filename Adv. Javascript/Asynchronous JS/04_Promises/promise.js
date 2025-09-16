@@ -85,6 +85,8 @@ async function promiseFiveConsume() {
         console.log(response)
     } catch (error) {
         console.log(error);
+    } finally {
+        console.log("Promise is settled (either resolved or rejected)")
     }
 }
 

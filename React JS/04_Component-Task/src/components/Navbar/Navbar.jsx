@@ -3,8 +3,8 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <h1>Navbar</h1>
   )
 }
 
-export default Navbar 
+export default Navbar  

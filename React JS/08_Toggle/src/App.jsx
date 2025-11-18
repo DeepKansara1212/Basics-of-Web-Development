@@ -19,7 +19,6 @@ const App = () => {
 
       {/* <button onClick={toggle}>Click to toggle</button> */}
 
-
       <button onClick={() => setVisible(!visible)}>Click to toggle</button> 
 
       {visible ? <h1>Text shown</h1> : null}
